@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HappyPets</string>
+    <string name="login_label_signup">Registrarse</string>
+    <string name="login_label_signin">Inicia Sesión</string>
+    <string name="result_welcome">Bienvenido %1$s</string>
+    <string name="title_activity_main_activity_login">MainActivityLogin</string>
+</resources>
