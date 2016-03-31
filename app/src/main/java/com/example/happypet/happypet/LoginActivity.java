@@ -31,20 +31,12 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = (EditText) findViewById(R.id.etPassword);
         tvLogIn = (TextView) findViewById(R.id.tvLogIn);
         //Aplicamos el evento onClick para el boton
-        tvLogIn.setOnClickListener(onDoneClickListener);
+
     }
 
-    View.OnClickListener onDoneClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            if(etUsername.getText().toString().trim() != "" && etPassword.getText().toString().trim() != ""){
-                Intent intent = new Intent(LoginActivity.this,ResultActivity.class);
-                intent.putExtra(Constants.PARAM_NAME,etUsername.getText().toString().trim());
-                startActivity(intent);
-            }
-        }
-    };
-
-
-
 }
+
+
+
+
+

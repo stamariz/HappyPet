@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         tvSignUp = (TextView)findViewById(R.id.tvSignUp);
         tvLogIn = (TextView)findViewById(R.id.tvLogIn);
         tvLogIn.setOnClickListener(onLogInClickListener);
-       tvSignUp.setOnClickListener(onSignInClickListener);
+
     }
     View.OnClickListener onLogInClickListener = new View.OnClickListener() {
         @Override
@@ -27,13 +27,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    View.OnClickListener onSignInClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
-            startActivity(intent);
-        }
-    };
 
-}
+
+
 }
