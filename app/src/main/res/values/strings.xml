@@ -7,7 +7,8 @@
 
         <string name="app_spinner">ComboBox</string>
         <string name="prompt">Seleccione un Distrito</string>
-        <string-array name="countries_array">
+        <string-array name="district_array">
+            <item>Seleccione un distrito</item>
             <item>Cercado de Lima</item>
             <item>Jesus María</item>
             <item>Lince</item>
