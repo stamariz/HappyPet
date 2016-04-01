@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/ivPet"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="180dp"
         android:src="@mipmap/pet"
         android:layout_gravity="center"/>
 
@@ -23,11 +23,55 @@
 
 
         <EditText
-            android:id="@+id/etUsername"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:hint="Ingrese su Usuario"/>
+            android:maxLength="50"
+            android:hint="Ingrese Nombre"/>
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:hint="Ingrese Apellido"/>
+
+        <EditText
+            android:id="@+id/etDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:text="@string/prompt"
+            android:hint="Distrito"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/prompt"
+            />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:maxLength="11"
+            android:hint="Teléfono"/>
+
+
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Correo"/>
 
         <EditText
             android:id="@+id/etPassword"

@@ -4,4 +4,18 @@
     <string name="login_label_signin">Inicia Sesión</string>
     <string name="result_welcome">Bienvenido %1$s</string>
     <string name="title_activity_main_activity_login">MainActivityLogin</string>
+
+        <string name="app_spinner">ComboBox</string>
+        <string name="prompt">Seleccione un Distrito</string>
+        <string-array name="countries_array">
+            <item>Cercado de Lima</item>
+            <item>Jesus María</item>
+            <item>Lince</item>
+            <item>Miraflores</item>
+            <item>San Borja</item>
+            <item>San Isidro</item>
+            <item>San Luis</item>
+            <item>San Miguel</item>
+        </string-array>
+
 </resources>
