@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView tvSignUp,tvLogIn;
+    private TextView tvSignUp,tvRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,14 +15,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvSignUp = (TextView)findViewById(R.id.tvSignUp);
-        tvLogIn = (TextView)findViewById(R.id.tvLogIn);
-        tvLogIn.setOnClickListener(onLogInClickListener);
+        tvRegister = (TextView)findViewById(R.id.tvRegister);
+
+        tvSignUp.setOnClickListener(onRegisterSignUpClickListener);
+        tvRegister.setOnClickListener(onRegisterClickListener);
 
     }
-    View.OnClickListener onLogInClickListener = new View.OnClickListener() {
+    View.OnClickListener onRegisterClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    View.OnClickListener onRegisterSignUpClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
             startActivity(intent);
         }
     };

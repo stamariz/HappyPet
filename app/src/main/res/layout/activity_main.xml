@@ -22,7 +22,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvLogIn"
+            android:id="@+id/tvSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -30,10 +30,11 @@
             android:text="@string/login_label_signin"
             android:textAllCaps="true"
             android:textColor="@color/black"
+            android:background="@drawable/ripple_bg_white"
             />
 
         <TextView
-            android:id="@+id/tvSignUp"
+            android:id="@+id/tvRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
